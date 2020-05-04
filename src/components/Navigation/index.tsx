@@ -1,0 +1,25 @@
+import React from 'react';
+import { Link } from 'gatsby';
+import styled from 'styled-components';
+import { Flex } from '../SS';
+import NavigationLink from './NavigationLink';
+
+function NavigationBar() {
+	const { pathname } = window.location;
+
+	return (
+		<Flex flexDirection="row" justifyContent="flex-end" width="100%" py={4}>
+			<NavigationLink to="/" active={pathname === '/'}>
+				Hi
+			</NavigationLink>
+			<NavigationLink to="/" active={pathname === '/about'}>
+				About
+			</NavigationLink>
+			<NavigationLink to="/resume" active={pathname === '/resume'}>
+				Resume
+			</NavigationLink>
+		</Flex>
+	);
+}
+
+export default NavigationBar;

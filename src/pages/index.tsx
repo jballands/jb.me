@@ -1,15 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Flex, Text } from '../components/SS';
 import Layout from '../components/Layout';
-
-const Center = styled.div`
-	display: flex;
-	flex-flow: column nowrap;
-	width: 100%;
-	height: 100%;
-	align-items: center;
-	justify-content: center;
-`;
+import FauxTyping from '../components/FauxTyping';
 
 const Title = styled.div`
 	color: #ffc31f;
@@ -18,9 +11,35 @@ const Title = styled.div`
 function IndexPage() {
 	return (
 		<Layout>
-			<Center>
-				<Title>jonballands</Title>
-			</Center>
+			<Flex height="100%" alignItems="center" justifyContent="flex-start">
+				<Text fontSize={5}>
+					<Text color="white">&lt;</Text>
+					<Text color="teal">Developer</Text>
+					<Text color="orange">&nbsp;type=</Text>
+					<Text color="green">
+						"<FauxTyping strings={['React', 'Frontend']} speed={100} />"
+					</Text>
+					<Text color="white">&gt;</Text>
+					<br />
+
+					<Text color="blue">&nbsp;&nbsp;&nbsp;&nbsp;Jon Ballands</Text>
+					<br />
+					<Text color="white">&lt;/</Text>
+					<Text color="teal">Developer</Text>
+					<Text color="white">&gt;</Text>
+					<br />
+					<br />
+					<Text color="white">&lt;</Text>
+					<Text color="blue">button</Text>
+					<Text color="white">&gt;</Text>
+					<br />
+					<Text color="blue">&nbsp;&nbsp;&nbsp;&nbsp;View Resume</Text>
+					<br />
+					<Text color="white">&lt;/</Text>
+					<Text color="blue">button</Text>
+					<Text color="white">&gt;</Text>
+				</Text>
+			</Flex>
 		</Layout>
 	);
 }
