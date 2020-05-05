@@ -77,8 +77,7 @@ function useTyping(
 	const typicalRef = useRef<HTMLElement>(null);
 
 	const steps = strings.reduce(
-		(acc: Array<string | number>, string) =>
-			acc.concat([...acc, string], [pause]),
+		(acc: Array<string | number>, string) => acc.concat([string, pause]),
 		[]
 	);
 

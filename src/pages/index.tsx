@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Flex, Text } from '../components/SS';
+import { Link } from 'gatsby';
+import { Box, Flex, Text } from '../components/SS';
 import Layout from '../components/Layout';
 import FauxTyping from '../components/FauxTyping';
 
@@ -8,16 +9,39 @@ const Title = styled.div`
 	color: #ffc31f;
 `;
 
+const ViewResume = styled.a`
+	text-decoration: none;
+
+	&:hover {
+		cursor: pointer;
+	}
+`;
+
 function IndexPage() {
 	return (
 		<Layout>
 			<Flex height="100%" alignItems="center" justifyContent="flex-start">
-				<Text fontSize={5}>
+				<Text fontSize={[2, 4, 5]}>
 					<Text color="white">&lt;</Text>
 					<Text color="teal">Developer</Text>
-					<Text color="orange">&nbsp;type=</Text>
+					<Text color="orange">&nbsp;does=</Text>
 					<Text color="green">
-						"<FauxTyping strings={['React', 'Frontend']} speed={100} />"
+						"
+						<FauxTyping
+							strings={[
+								'Web Dev',
+								'React',
+								'Next.js',
+								'TypeScript',
+								'Gatsby',
+								'GraphQL',
+								'Node',
+								'Frontend',
+							]}
+							speed={100}
+							pause={1500}
+						/>
+						"
 					</Text>
 					<Text color="white">&gt;</Text>
 					<br />
@@ -29,15 +53,17 @@ function IndexPage() {
 					<Text color="white">&gt;</Text>
 					<br />
 					<br />
-					<Text color="white">&lt;</Text>
-					<Text color="blue">button</Text>
-					<Text color="white">&gt;</Text>
-					<br />
-					<Text color="blue">&nbsp;&nbsp;&nbsp;&nbsp;View Resume</Text>
-					<br />
-					<Text color="white">&lt;/</Text>
-					<Text color="blue">button</Text>
-					<Text color="white">&gt;</Text>
+					<ViewResume href="/resume_2020_public_version_no_phone.pdf">
+						<Text color="white">&lt;</Text>
+						<Text color="blue">button</Text>
+						<Text color="white">&gt;</Text>
+						<br />
+						<Text color="blue">&nbsp;&nbsp;&nbsp;&nbsp;View Resume</Text>
+						<br />
+						<Text color="white">&lt;/</Text>
+						<Text color="blue">button</Text>
+						<Text color="white">&gt;</Text>
+					</ViewResume>
 				</Text>
 			</Flex>
 		</Layout>

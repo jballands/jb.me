@@ -3,6 +3,7 @@ import styled, { createGlobalStyle, ThemeProvider } from 'styled-components';
 import 'normalize.css';
 import theme from '../theme';
 import Navigation from './Navigation';
+import Footer from './Footer';
 import { Box, Flex } from './SS';
 
 const GlobalStyles = createGlobalStyle`
@@ -15,6 +16,10 @@ const GlobalStyles = createGlobalStyle`
 		font-family: 'FiraCode-Regular';
 		background: #1a1a1a;
 		color: #f7f7f7;
+	}
+
+	p {
+		margin: 28px 0;
 	}
 `;
 
@@ -42,10 +47,12 @@ function Layout({ children }: LayoutProps) {
 							top={0}
 							width="100%"
 							height="100%"
+							py={4}
 						>
 							{children}
 						</Box>
 					</Flex>
+					<Footer />
 				</Flex>
 			</Box>
 		</ThemeProvider>

@@ -8,11 +8,17 @@ function NavigationBar() {
 	const { pathname } = window.location;
 
 	return (
-		<Flex flexDirection="row" justifyContent="flex-end" width="100%" py={4}>
+		<Flex
+			as="nav"
+			flexDirection="row"
+			justifyContent="flex-end"
+			width="100%"
+			py={4}
+		>
 			<NavigationLink to="/" active={pathname === '/'}>
 				Hi
 			</NavigationLink>
-			<NavigationLink to="/" active={pathname === '/about'}>
+			<NavigationLink to="/about" active={pathname === '/about'}>
 				About
 			</NavigationLink>
 			<NavigationLink to="/resume" active={pathname === '/resume'}>
