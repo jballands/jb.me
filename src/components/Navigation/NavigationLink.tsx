@@ -5,8 +5,8 @@ import { Text } from '../SS';
 
 interface NavigationLinkProps {
 	to: string;
-	active: boolean;
 	children: string | ReactNode;
+	active?: boolean;
 	external?: boolean;
 }
 
