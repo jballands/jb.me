@@ -1,14 +1,10 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
-import { useLocation } from '@reach/router';
 import { Flex } from '../SS';
 import NavigationLink from './NavigationLink';
 
 function NavigationBar() {
-	const location = useLocation();
-	const { pathname } = location;
-
 	return (
 		<Flex
 			as="nav"
@@ -17,12 +13,8 @@ function NavigationBar() {
 			width="100%"
 			py={4}
 		>
-			<NavigationLink to="/" active={pathname === '/'}>
-				Hi
-			</NavigationLink>
-			<NavigationLink to="/about" active={pathname.startsWith('/about')}>
-				About
-			</NavigationLink>
+			<NavigationLink to="/">Hi</NavigationLink>
+			<NavigationLink to="/about">About</NavigationLink>
 			<NavigationLink external to="/resume_2020_public_version_no_phone.pdf">
 				Resume
 			</NavigationLink>

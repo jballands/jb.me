@@ -1,12 +1,12 @@
 import React, { ReactNode } from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
+import { useLocation } from '@reach/router';
 import { Text } from '../SS';
 
 interface NavigationLinkProps {
 	to: string;
 	children: string | ReactNode;
-	active?: boolean;
 	external?: boolean;
 }
 
@@ -22,12 +22,12 @@ const StyledText = styled(Text)`
 	text-decoration: none;
 `;
 
-function NavigationLink({
-	children,
-	external,
-	active,
-	to,
-}: NavigationLinkProps) {
+function NavigationLink({ children, external, to }: NavigationLinkProps) {
+	const location = useLocation();
+	const { pathname } = location;
+
+	const active = to === '/' ? pathname === '/' : pathname.indexOf(to) > -1;
+
 	if (external) {
 		return (
 			<StyledA href={to}>
