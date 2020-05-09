@@ -5,7 +5,8 @@ import { Flex } from '../SS';
 import NavigationLink from './NavigationLink';
 
 function NavigationBar() {
-	const { pathname } = window.location;
+	const { pathname } =
+		typeof window !== 'undefined' ? window.location : { pathname: null };
 
 	return (
 		<Flex
