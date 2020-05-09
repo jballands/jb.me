@@ -83,7 +83,7 @@ function useTyping(
 
 	useEffect(() => {
 		const current = typicalRef.current!;
-		type(current, speed, ...steps, type);
+		const cancel = type(current, speed, ...steps, type);
 	});
 
 	return typicalRef;

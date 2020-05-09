@@ -7,9 +7,14 @@ interface NavigationLinkProps {
 	to: string;
 	active: boolean;
 	children: string | ReactNode;
+	external?: boolean;
 }
 
 const StyledLink = styled(Link)`
+	text-decoration: none;
+`;
+
+const StyledA = styled.a`
 	text-decoration: none;
 `;
 
@@ -17,10 +22,25 @@ const StyledText = styled(Text)`
 	text-decoration: none;
 `;
 
-function NavigationLink({ children, active, to }: NavigationLinkProps) {
+function NavigationLink({
+	children,
+	external,
+	active,
+	to,
+}: NavigationLinkProps) {
+	if (external) {
+		return (
+			<StyledA href={to}>
+				<StyledText color={active ? 'yellow' : 'white'} px={[2, 3, 3]}>
+					{children}
+				</StyledText>
+			</StyledA>
+		);
+	}
+
 	return (
 		<StyledLink to={to}>
-			<StyledText color={active ? 'yellow' : 'white'} px={3}>
+			<StyledText color={active ? 'yellow' : 'white'} px={[2, 3, 3]}>
 				{children}
 			</StyledText>
 		</StyledLink>

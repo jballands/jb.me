@@ -21,8 +21,19 @@ function NavigationBar() {
 			<NavigationLink to="/about" active={pathname === '/about'}>
 				About
 			</NavigationLink>
-			<NavigationLink to="/resume" active={pathname === '/resume'}>
+			<NavigationLink
+				external
+				to="/resume_2020_public_version_no_phone.pdf"
+				active={pathname === '/resume'}
+			>
 				Resume
+			</NavigationLink>
+			<NavigationLink
+				external
+				to="https://github.com/jballands"
+				active={pathname === '/resume'}
+			>
+				Github
 			</NavigationLink>
 		</Flex>
 	);

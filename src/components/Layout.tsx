@@ -36,21 +36,12 @@ function Layout({ children }: LayoutProps) {
 					justifyContent="center"
 					minHeight="100vh"
 					m="auto"
-					width={['87.5%', '724px', '980px']}
+					width={['87.5%', '700px', '980px']}
 				>
 					<GlobalStyles />
 					<Navigation />
-					<Flex position="relative" flexGrow={1}>
-						<Box
-							position="absolute"
-							left={0}
-							top={0}
-							width="100%"
-							height="100%"
-							py={4}
-						>
-							{children}
-						</Box>
+					<Flex flexGrow={1}>
+						<Box py={4}>{children}</Box>
 					</Flex>
 					<Footer />
 				</Flex>
