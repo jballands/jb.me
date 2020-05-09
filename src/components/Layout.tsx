@@ -1,5 +1,6 @@
 import React, { ReactNode } from 'react';
 import styled, { createGlobalStyle, ThemeProvider } from 'styled-components';
+import { Helmet } from 'react-helmet';
 import 'normalize.css';
 import theme from '../theme';
 import Navigation from './Navigation';
@@ -24,12 +25,17 @@ const GlobalStyles = createGlobalStyle`
 `;
 
 interface LayoutProps {
+	title: string;
 	children: ReactNode;
 }
 
-function Layout({ children }: LayoutProps) {
+function Layout({ title, children }: LayoutProps) {
 	return (
 		<ThemeProvider theme={theme}>
+			<Helmet title={title}>
+				<meta charSet="utf-8" />
+				<meta name="description" content="Personal website of Jon Ballands" />
+			</Helmet>
 			<Box>
 				<Flex
 					flexDirection="column"

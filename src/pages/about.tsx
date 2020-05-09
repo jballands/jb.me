@@ -29,7 +29,7 @@ function AboutSection({ children, title, ...rest }: AboutSectionProps) {
 
 function About() {
 	return (
-		<Layout>
+		<Layout title="About - jonathanballands.me">
 			<AboutSection title="Welcome" mb={5}>
 				<p>Howdy!</p>
 				<p>

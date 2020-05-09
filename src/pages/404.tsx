@@ -5,7 +5,7 @@ import Link from '../components/Link';
 
 function NotFoundPage() {
 	return (
-		<Layout>
+		<Layout title="Not Found - jonathanballands.me">
 			<Text fontSize={5} color="cyan">
 				404
 			</Text>
