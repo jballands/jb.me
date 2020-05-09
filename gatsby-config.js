@@ -1,8 +1,8 @@
 module.exports = {
 	siteMetadata: {
-		title: `Gatsby Default Starter`,
-		description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-		author: `@gatsbyjs`,
+		title: `jonathanballands.me`,
+		description: `The personal website of Jon Ballands.`,
+		author: `Jon Ballands`,
 	},
 	plugins: [
 		`gatsby-plugin-react-helmet`,
@@ -11,13 +11,13 @@ module.exports = {
 		{
 			resolve: `gatsby-plugin-manifest`,
 			options: {
-				name: `jonathanballane.me`,
+				name: `jonathanballands.me`,
 				short_name: `jb.me`,
 				start_url: `/`,
 				background_color: `#663399`,
 				theme_color: `#663399`,
 				display: `standalone`,
-				icon: ``, // This path is relative to the root of the site.
+				icon: `./static/favicon.png`, // This path is relative to the root of the site.
 			},
 		},
 		`gatsby-plugin-styled-components`,

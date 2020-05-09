@@ -19,7 +19,7 @@ const ViewResume = styled.a`
 
 function IndexPage() {
 	return (
-		<Layout title="jonathanballande.me">
+		<Layout title="jonathanballands.me">
 			<Flex height="100%" alignItems="center" justifyContent="flex-start">
 				<Text fontSize={[2, 4, 5]}>
 					<Text color="white">&lt;</Text>
