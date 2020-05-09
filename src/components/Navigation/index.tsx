@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
+import { useLocation } from '@reach/router';
 import { Flex } from '../SS';
 import NavigationLink from './NavigationLink';
 
 function NavigationBar() {
-	const { pathname } =
-		typeof window !== 'undefined' ? window.location : { pathname: null };
+	const location = useLocation();
+	const { pathname } = location;
 
 	return (
 		<Flex
