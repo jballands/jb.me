@@ -47,6 +47,23 @@ function About() {
 			<AboutSection title="JunkDrawer">
 				<Box>
 					<p>
+						<Text fontSize={[3, 4, 4]}>wordart.cool</Text>
+					</p>
+					<p>
+						Messing around with three.js via react-three-fiber. Create goofy
+						wordart like it's 1999 and it's computer lab time.
+					</p>
+					<p>
+						<Link external to="https://wordart.cool" mr={3}>
+							Website
+						</Link>
+						<Link external to="https://github.com/jballands/wordart.cool">
+							Github
+						</Link>
+					</p>
+				</Box>
+				<Box>
+					<p>
 						<Text fontSize={[3, 4, 4]}>What Can I Catch Now?</Text>
 					</p>
 					<p>
