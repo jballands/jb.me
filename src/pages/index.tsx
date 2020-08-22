@@ -29,13 +29,13 @@ function IndexPage() {
 						"
 						<FauxTyping
 							strings={[
-								'Web Dev',
 								'React',
-								'Next.js',
 								'TypeScript',
+								'Node',
+								'D3',
+								'Next.js',
 								'Gatsby',
 								'GraphQL',
-								'Node',
 								'Frontend',
 							]}
 							speed={100}
