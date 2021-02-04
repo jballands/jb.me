@@ -47,7 +47,9 @@ function About() {
 			<AboutSection title="JunkDrawer">
 				<Box>
 					<p>
-						<Text fontSize={[3, 4, 4]}>wordart.cool</Text>
+						<Text fontSize={3} color="pink" fontStyle="italic">
+							wordart.cool
+						</Text>
 					</p>
 					<p>
 						Messing around with three.js via react-three-fiber. Create goofy
@@ -64,7 +66,9 @@ function About() {
 				</Box>
 				<Box>
 					<p>
-						<Text fontSize={[3, 4, 4]}>What Can I Catch Now?</Text>
+						<Text fontSize={3} color="pink" fontStyle="italic">
+							What Can I Catch Now?
+						</Text>
 					</p>
 					<p>
 						A small web app using React and Apollo that tells you what critters
@@ -84,7 +88,9 @@ function About() {
 				</Box>
 				<Box>
 					<p>
-						<Text fontSize={[3, 4, 4]}>jb.me 4</Text>
+						<Text fontSize={3} color="pink" fontStyle="italic">
+							jb.me 4
+						</Text>
 					</p>
 					<p>The newest version of my website written in Gatsby.</p>
 					<p>

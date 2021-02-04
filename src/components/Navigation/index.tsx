@@ -15,7 +15,7 @@ function NavigationBar() {
 		>
 			<NavigationLink to="/">Hi</NavigationLink>
 			<NavigationLink to="/about">About</NavigationLink>
-			<NavigationLink external to="/resume_2020_public_version_no_phone.pdf">
+			<NavigationLink external to="/resume_2021_public_version_no_phone.pdf">
 				Resume
 			</NavigationLink>
 			<NavigationLink external to="https://github.com/jballands">

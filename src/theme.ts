@@ -11,6 +11,7 @@ const theme: Theme = {
 		orange: '#ffb029',
 		green: '#61ff66',
 		white: '#f7f7f7',
+		pink: '#ff0088',
 	},
 };
 

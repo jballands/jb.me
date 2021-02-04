@@ -53,7 +53,7 @@ function IndexPage() {
 					<Text color="white">&gt;</Text>
 					<br />
 					<br />
-					<ViewResume href="/resume_2020_public_version_no_phone.pdf">
+					<ViewResume href="/resume_2021_public_version_no_phone.pdf">
 						<Text color="white">&lt;</Text>
 						<Text color="blue">button</Text>
 						<Text color="white">&gt;</Text>
