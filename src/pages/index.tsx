@@ -35,8 +35,11 @@ function IndexPage() {
 								'D3',
 								'Next.js',
 								'Gatsby',
+								'Docker',
 								'GraphQL',
 								'Frontend',
+								'Full-stack',
+								'Anything JS',
 							]}
 							speed={100}
 							pause={1500}
