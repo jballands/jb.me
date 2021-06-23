@@ -1,9 +1,9 @@
 {
-	"name": "gatsby-starter-default",
+	"name": "jb.me",
 	"private": true,
-	"description": "A simple starter to get up and developing quickly with Gatsby",
-	"version": "0.1.0",
-	"author": "Kyle Mathews <mathews.kyle@gmail.com>",
+	"description": "My personal website",
+	"version": "4.0.1",
+	"author": "Jon Ballands <jballands@hey.com>",
 	"dependencies": {
 		"@types/react-helmet": "^5.0.15",
 		"babel-plugin-styled-components": "^1.10.7",

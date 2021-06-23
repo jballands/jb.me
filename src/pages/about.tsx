@@ -33,8 +33,8 @@ function About() {
 			<AboutSection title="Welcome" mb={5}>
 				<p>Howdy!</p>
 				<p>
-					I'm a frontend web developer at Apple based out of Austin, TX. I have
-					more than 6 years of experience in web development, specializing in
+					I'm a frontend web developer at Indeed based out of Austin, TX. I have
+					more than 7 years of experience in web development, specializing in
 					modern web apps using technologies like Node, React, GraphQL, Next.js,
 					and more.
 				</p>
