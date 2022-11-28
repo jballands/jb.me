@@ -9,13 +9,15 @@
 		"build": "gatsby build",
 		"serve": "gatsby serve",
 		"clean": "gatsby clean",
-		"typecheck": "tsc --noEmit"
+		"typecheck": "tsc --noEmit",
+		"preload-fonts": "gatsby-preload-fonts"
 	},
 	"dependencies": {
 		"babel-plugin-styled-components": "^2.0.7",
 		"gatsby": "^5.2.0",
 		"gatsby-plugin-image": "^3.2.0",
 		"gatsby-plugin-manifest": "^5.2.0",
+		"gatsby-plugin-preload-fonts": "^4.2.0",
 		"gatsby-plugin-sharp": "^5.2.0",
 		"gatsby-plugin-styled-components": "^6.2.0",
 		"gatsby-source-filesystem": "^5.2.0",
