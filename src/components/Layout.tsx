@@ -51,7 +51,9 @@ function Layout({ title, children }: LayoutProps) {
 					<GlobalStyles />
 					<Navigation />
 					<Flex flexGrow={1}>
-						<Box py={4}>{children}</Box>
+						<Box py={4} width="100%">
+							{children}
+						</Box>
 					</Flex>
 					<Footer />
 				</Flex>

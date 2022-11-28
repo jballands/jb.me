@@ -21,15 +21,15 @@ interface LinkProps {
 function Link({ children, external, to, ...rest }: LinkProps) {
 	if (external) {
 		return (
-			<StyledA href={to}>
-				<Text {...rest}>{children}</Text>
+			<StyledA href={to} {...rest}>
+				<Text>{children}</Text>
 			</StyledA>
 		);
 	}
 
 	return (
-		<StyledLink to={to}>
-			<Text {...rest}>{children}</Text>
+		<StyledLink to={to} {...rest}>
+			<Text>{children}</Text>
 		</StyledLink>
 	);
 }

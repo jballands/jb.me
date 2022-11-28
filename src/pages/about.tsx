@@ -60,7 +60,7 @@ function About() {
 						wordart like it's 1999 and it's computer lab time.
 					</p>
 					<p>
-						<Link external to="https://wordart.cool" mr={3}>
+						<Link external to="https://wordart-cool.vercel.app/" mr={3}>
 							Website
 						</Link>
 						<Link external to="https://github.com/jballands/wordart.cool">
@@ -79,7 +79,7 @@ function About() {
 						you can catch in Animal Crossing: New Horizons.
 					</p>
 					<p>
-						<Link external to="https://whatcanicatchnow.com" mr={3}>
+						<Link external to="https://what-can-i-catch-now.vercel.app/" mr={3}>
 							Website
 						</Link>
 						<Link
@@ -93,7 +93,7 @@ function About() {
 				<Box>
 					<p>
 						<Text fontSize={3} color="pink" fontStyle="italic">
-							jb.me 4
+							jb.me 4.1
 						</Text>
 					</p>
 					<p>The newest version of my website written in Gatsby.</p>
