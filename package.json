@@ -1,6 +1,6 @@
 {
 	"name": "jb.me",
-	"version": "4.1.0",
+	"version": "5.0.0",
 	"description": "jb.me",
 	"author": "Jon Ballands <jballands@gmail.com>",
 	"scripts": {
@@ -14,13 +14,13 @@
 	},
 	"dependencies": {
 		"babel-plugin-styled-components": "^2.0.7",
-		"gatsby": "^5.2.0",
-		"gatsby-plugin-image": "^3.2.0",
-		"gatsby-plugin-manifest": "^5.2.0",
-		"gatsby-plugin-preload-fonts": "^4.2.0",
-		"gatsby-plugin-sharp": "^5.2.0",
-		"gatsby-plugin-styled-components": "^6.2.0",
-		"gatsby-source-filesystem": "^5.2.0",
+		"gatsby": "^5.13.7",
+		"gatsby-plugin-image": "^3.13.1",
+		"gatsby-plugin-manifest": "^5.13.1",
+		"gatsby-plugin-preload-fonts": "^4.13.1",
+		"gatsby-plugin-sharp": "^5.13.1",
+		"gatsby-plugin-styled-components": "^6.13.1",
+		"gatsby-source-filesystem": "^5.13.1",
 		"normalize.css": "^8.0.1",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
